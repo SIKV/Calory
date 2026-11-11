@@ -1,0 +1,2 @@
+// Loads the local file if it exists; still builds if it doesn't
+#include? "Local.xcconfig"
