@@ -29,19 +29,19 @@ struct HomeView: View {
             .navigationSubtitle("Wednesday 13 November")
             .toolbar {
                 Menu {
-                    Button(.homeMenuFeedback, systemImage: "envelope") { }
-                    Button(.homeMenuPrivacy, systemImage: "shield") { }
+                    Button(.homeMenuFeedback, systemImage: .iconFeedback) { }
+                    Button(.homeMenuPrivacy, systemImage: .iconPrivacy) { }
                     Divider()
-                    Label(.homeMenuVersion(version: "1.0 (1)"), systemImage: "info.circle")
+                    Label(.homeMenuVersion(version: "1.0 (1)"), systemImage: .iconInfo)
                 } label: {
-                    Label(.homeMenuMore, systemImage: "ellipsis")
+                    Label(.homeMenuMore, systemImage: .iconMore)
                 }
             }
             .safeAreaInset(edge: .bottom) {
                 Button {
                     
                 } label: {
-                    Label(.homeButtonAddFood, systemImage: "plus")
+                    Label(.homeButtonAddFood, systemImage: .iconAdd)
                         .font(.headline)
                 }
                 .buttonStyle(.glass)
